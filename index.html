@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+
+
+  <link rel="icon" href="logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MetaOtakus</title>
+</head>
+<body>
+  <header>
+    <h1>MetaOtakus</h1>
+  </header>
+
+  <section>
+    <p>
+      Join OnlyFans for Otakus.
+      <br> <strong>THE VR ERA IS COMING.</strong>
+      <br>Grab your chance to be a muse generator and get <strong>RICH</strong>.
+  </section>
+
+
+  <section>
+    <h2>Click Popular Muses</h2>
+
+    <div class="image-gallery">
+        <!-- Character A -->
+      <div class="image-container">
+        <a href="red1.jpg" data-caption="Amy" data-gallery="character-a"><img src="red.jpg" alt="Sample 1 - Character A" /></a>
+        <span class="overlay">Amy</span>
+        <div style="display: none;">
+          <a href="red_bunny.jpg" data-caption="Do I look pretty?" data-gallery="character-a"></a>
+          <a href="redBunny2.jpg" data-caption="It's a bit embarrassing haha.." data-gallery="character-a"></a>
+          <!-- Add more images for Character A if needed -->
+        </div>
+
+      </div>
+
+      <!-- Character B -->
+      <div class="image-container">
+        <a href="browni.jpg" data-caption="Hana" data-gallery="character-b"><img src="brownSchool1.jpg" alt="Sample 1 - Character B" /></a>
+        <span class="overlay">Hana</span>
+        <div style="display: none;">
+          <a href="brownIdol1.jpg" data-caption="Taiki-kun?!" data-gallery="character-b"></a>
+          <a href="brownIdol2.jpg" data-caption="You pervert!" data-gallery="character-b"></a>
+          <a href="brownIdol3.jpg" data-caption="Where u looking at!" data-gallery="character-b"></a>
+          <a href="brownIdol4.jpg" data-caption="Just sit there and watch me cum you bitch!!" data-gallery="character-b"></a>
+
+          <!-- Add more images for Character B if needed -->
+        </div>
+
+      </div>
+
+      <!-- Character C -->
+      <div class="image-container">
+        <a href="blondBitch1.jpg" data-caption="Emily" data-gallery="character-c"><img src="Ami.jpg" alt="Sample 1 - Character C" /></a>
+        <span class="overlay">Emily</span>
+        <div style="display: none;">
+          <a href="Ami1.jpg" data-caption="~" data-gallery="character-c"></a>
+          <a href="blondBitch2.jpg" data-caption="Hey, can you help me with putting on the sunscreen?" data-gallery="character-c"></a>
+          <a href="blondBitch4.jpg" data-caption="Haha.. why did you get so big?" data-gallery="character-c"></a>
+        </div>
+
+      </div>
+
+      <!-- Character D -->
+
+      <div class="image-container">
+        <a href="blue2.jpg" data-caption="Mai" data-gallery="character-d"><img src="blue1.jpg" alt="Sample 1 - Character D" /></a>
+        <span class="overlay">Mai</span>
+        <div style="display: none;">
+          <a href="blue3.jpg" data-caption="I gotta go!.." data-gallery="character-d"></a>
+          <a href="blue4.jpg" data-caption="Is it too small..?" data-gallery="character-d"></a>
+          <a href="blue5.jpg" data-caption="Love you senpai!.." data-gallery="character-d"></a>
+        </div>
+          <!-- Add more images for Character D if needed -->
+
+
+    </div>
+  </section>
+
+  <div style="text-align: center;"> If you're an anime fan, follow your favourite muses.</div>
+
+
+
+  <section>
+    <h2>Join the Waitlist</h2>
+    <form action="https://script.google.com/macros/s/AKfycbyfjtxwg_dZdl3pIBBMKZVkYVX1Ox_f5EObHiXjy8YqPSaL_Owemk0WSJ9jUkIiwKMCNA/exec" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="role_user" class="role-option">
+        <input type="radio" id="role_user" name="role" value="user" required>
+        User
+      </label>
+      <label for="role_creator" class="role-option">
+        <input type="radio" id="role_creator" name="role" value="creator" required>
+        Creator
+      </label>
+      <label for="role_both" class="role-option">
+        <input type="radio" id="role_both" name="role" value="both" required>
+        Both
+      </label>
+      <label for="age">
+        <input type="checkbox" id="age" name="age" required>
+        I am 18 years or older
+      </label>
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </section>
+
+
+
+  <br></br>
+
+  <script>
+    baguetteBox.run('.image-gallery');
+  </script>
+
+  <footer>
+    <p>&copy; 2023 MetaOtakus | Twitter <a href="https://twitter.com/otakus_meta" target="_blank">@otakus_meta</a> | Discord <a href="https://discord.gg/gZQdKjpgjF" target="_blank">@MetaOtakus</a></p>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const imageLinks = document.querySelectorAll('.image-gallery a');
+      const speechBubbles = document.querySelectorAll('.speech-bubble');
+
+      imageLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          const character = link.dataset.gallery;
+          speechBubbles.forEach(function(bubble) {
+            if (bubble.dataset.character === character) {
+              bubble.style.display = 'block';
+            } else {
+              bubble.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
